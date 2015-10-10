@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+<style name="common_button_style">
+     <item name="android:layout_width">match_parent</item>
+   <item name="android:layout_height">40dp</item>
+    <item name="android:background">@drawable/selector_red_corners_button</item>
+   <item name="android:padding">6.0dip</item>
+    <item name="android:textColor">@android:color/white</item>
+    <item name="android:textSize">18sp</item>
+    <item name="android:layout_gravity">center_horizontal</item>
+
+  </style>
+
+</resources>

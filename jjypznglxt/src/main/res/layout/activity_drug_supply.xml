@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.admin.jjypznglxt.activity.DrugSupplyActivity">
+
+    <android.support.v7.widget.Toolbar
+
+        android:id="@+id/toobar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#5500ff00">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_up"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="药物补给"
+                android:textSize="24sp"
+                android:textColor="@android:color/white"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar
+        >
+
+    <TextView
+        android:id="@+id/aid"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toobar"
+        android:layout_height="30dp"
+        android:text="心脏骤停小推车"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:background="#5D478B"/>
+
+    <ListView
+        android:id="@+id/cardic"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/aid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+    <Button
+        android:onClick="button"
+        style="@style/common_button_style"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/cardic"
+        android:text="请扫描二维码"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

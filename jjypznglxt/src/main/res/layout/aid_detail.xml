@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <ImageView
+        android:id="@+id/tubiao"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/uaid"/>
+    <TextView
+        android:id="@+id/num"
+        android:layout_toRightOf="@+id/tubiao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:text="小推车编号为："
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:id="@+id/cart"
+        android:layout_toRightOf="@+id/num"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"/>
+</RelativeLayout>

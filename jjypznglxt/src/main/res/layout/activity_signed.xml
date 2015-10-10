@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <android.support.v7.widget.Toolbar
+
+        android:id="@+id/toobar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#5500ff00">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="急救小推车签收"
+                android:textSize="24sp"
+                android:textColor="@android:color/white"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/iv_signed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/u32"
+        android:layout_below="@id/toobar"
+        android:layout_marginTop="80dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回主页"
+        android:textSize="20sp"
+        android:textColor="@android:color/holo_blue_dark"
+        style="?android:attr/borderlessButtonStyle"
+        android:onClick="returnHome"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/iv_signed"
+        android:layout_alignLeft="@id/iv_signed"
+        />
+
+</RelativeLayout>

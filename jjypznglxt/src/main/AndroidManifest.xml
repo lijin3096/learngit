@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin.jjypznglxt" >
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activity.LoadingActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/title_activity_loading" >
+        </activity>
+        <activity
+            android:name=".zxing.camera.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="CaptureActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name=".activity.FirstAidActivity"
+            android:label="@string/title_activity_first_aid" >
+        </activity>
+        <activity
+            android:name=".activity.InformationNoticeActivity"
+            android:label="@string/title_activity_information_notice" >
+        </activity>
+
+        <activity
+            android:name=".activity.ChangePasswordActivity"
+            android:label="@string/title_activity_change_password" >
+        </activity>
+        <activity
+            android:name=".activity.ChangedActivity"
+            android:label="@string/title_activity_changed" >
+        </activity>
+        <activity
+            android:name=".activity.ShowResultActivity"
+            android:label="@string/title_activity_show_result" >
+        </activity>
+        <activity
+            android:name=".activity.InputBorcodeActivity"
+            android:label="@string/title_activity_input_borcode" >
+        </activity>
+        <activity
+            android:name=".activity.FirstAidResult"
+            android:label="@string/title_activity_first_aid_result" >
+        </activity>
+        <activity
+            android:name=".activity.MedicineSupplyActivity"
+            android:label="@string/title_activity_medicine_supply" >
+        </activity>
+        <activity
+            android:name=".activity.SignSmallCarActivity"
+            android:label="@string/title_activity_sign_small_car" >
+        </activity>
+        <activity
+            android:name=".activity.SignProjectActivity"
+            android:label="@string/title_activity_sign_project" >
+        </activity>
+        <activity
+            android:name=".activity.SignedActivity"
+            android:label="@string/title_activity_signed" >
+        </activity>
+        <activity android:name=".aidfragment.JijiuActivity"
+            />
+    </application>
+
+</manifest>

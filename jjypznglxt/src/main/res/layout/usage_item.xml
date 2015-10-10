@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_usage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.静脉注射肾上腺素lmg／次，每3～5分钟l次"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:maxLines="2"
+        />
+
+    <TextView
+        android:id="@+id/tv_drawerId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_usage"
+        android:background="@drawable/u41"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:text="所在抽屉号为：1"/>
+
+    <CheckBox
+        android:id="@+id/cb_meccount"
+        android:enabled="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_drawerId"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:checked="false"
+
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:text="已用药量：0"/>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/butong"
+    android:background="@android:color/white"
+    tools:context="com.example.admin.jjypznglxt.aidfragment.AidFirstFragment">
+
+    <TextView
+        android:id="@+id/xiangmumingcheng"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toobar"
+        android:layout_height="30dp"
+        android:text="    心脏骤停小推车"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:background="#9932cc"/>
+    <ListView
+        android:id="@+id/xiangmuneirong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/xiangmumingcheng"></ListView>
+    <Button
+        android:id="@+id/scan"
+        android:onClick="button"
+        style="@style/common_button_style"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/xiangmuneirong"
+        android:text="请扫描二维码"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     tools:context=".MainActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toobar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#5500ff00" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        />
+    </android.support.v7.widget.Toolbar >
+  <GridView
+      android:id="@+id/zhuye"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:stretchMode="columnWidth"
+      android:verticalSpacing="0dp"
+      android:horizontalSpacing="0dp"
+      android:numColumns="2"
+      >
+  </GridView>
+
+</LinearLayout>
